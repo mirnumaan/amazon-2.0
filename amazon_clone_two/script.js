@@ -51,7 +51,7 @@ function getItems(){
         doc.appendChild(addToCartEl);
         document.querySelector(".main-sectiom-products").appendChild(doc);
         })
-        document.querySelector(".main-section-products").innerHTML= itemsHTML;
+        document.quer\ySelector(".main-section-products").innerHTML= itemsHTML;
 
     }
     
