@@ -49,9 +49,9 @@ function getItems(){
         addToCartEl.classList.add("hover:bg-yellow-600", "cursor-pointer", "product-add", "h-8", "w-28", "rounded", "bg-yellow-500", "text-white", "text-md", "flex", "justify-center", "items-center");
         addToCartEl.innerText="Add To Cart";
         doc.appendChild(addToCartEl);
-        document.querySelector(".main-sectiom-products").appendChild(doc);
+        document.querySelector(".main-section-products").appendChild(doc);
         })
-        document.querySelector(".main-section-products").innerHTML= itemsHTML;
+        // document.querySelector(".main-section-products").innerHTML= itemsHTML;
 
     }
     
