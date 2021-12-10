@@ -10,16 +10,13 @@
         integrity="sha384-l0/0sn63N3mskDgRYJZA6Mogihu0VY3CusdLMiwpJ9LFPklOARUcOiWEIGGmFELx"
         crossorigin="anonymous">
     </script>
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-     </script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script src="./firebase.js"></script> 
+    <script src="./script.js"></script>
+     
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -231,33 +228,12 @@
                 </div>
                 <div class="main-section-deals mt-5">
                     <h1 class="font-bold text-gray-700 text-2xl">Hot Deals 🔥</h1>
-                    <div class="main-product flex">
+                    <div class="main-section-products flex">
+                    
                         
-                        <div class="product-image
-                        rounded-lg w-48 h-52  p-4 ">
-                            <img class= "w-full h-full object-contain"src="https://m.media-amazon.com/images/I/41V5KQ500IL.jpg">
-                            <h1 class="product-name text-gray-600 font-bold mt-2 test-sm cursor-pointer
-                            ">
-                                Nintendo Switch
-    
-                            </h1>
-                            <div class="product built text-bold text-green-500 my-1">
-                                Nintendo
-    
-                            </div>
-                            <div class="product-rating text-black my-1">
-                                ⭐️⭐️⭐️⭐️⭐️ 4.5
-    
-                            </div>
-                            <div class="product-price text-black  my-1">
-                                $1149
-                            </div>
-                            <div class="add-to-cart h-8 w-28  text-md rounded  cursor-pointer hover:bg-yellow-600 text-white-500 flex bg-yellow-600 items-center justify-center">
-                                Add To Cart
-
-                            </div>
+                       
                            
-                        </div>
+                        
                         <!-- <h1 class="product-name text-gray-600 font-bold mt-2 test-sm 
                         ">
                             Nintendo Switch
@@ -271,112 +247,10 @@
                             ⭐️⭐️⭐️⭐️⭐️ 4.5
 
                         </div> -->
-                        <div class="product-image
-                        rounded-lg w-48 h-52  p-4 ">
-                            <img class= "w-full h-full object-contain"src="https://www.thenewatlantis.com/wp-content/uploads/2020/09/Sapiens-1.jpg">
-                            <h1 class="product-name text-gray-600 font-bold mt-2 test-sm cursor-pointer
-                            ">
-                                Sapians
-    
-                            </h1>
-                            <div class="product built text-bold text-green-500 my-1">
-                                Penguin
-    
-                            </div>
-                            <div class="product-rating text-black justify-center -ml-1 my-1">
-                                ⭐️⭐️⭐️⭐️⭐️ 4.5
-    
-                            </div>
-                            <div class="product-rating text-black justify-center -ml-1 my-1">
-                                $120
-    
-                            </div>
-                            <div class="add-to-cart h-8 w-28  text-md rounded  cursor-pointer hover:bg-yellow-600 text-white-500 flex bg-yellow-600 items-center justify-center">
-                                Add To Cart
-
-                            </div>
-                           
-                        </div>
-                        <div class="product-image
-                        rounded-lg w-48 h-52  p-4 ">
-                            <img class= "w-full h-full object-contain"src="https://m.media-amazon.com/images/I/71an9eiBxpL._SL1500_.jpg">
-                            <h1 class="product-name text-gray-600 font-bold mt-2 test-sm cursor-pointer
-                            ">
-                                Macbook Pro
-    
-                            </h1>
-                            <div class="product built text-bold text-green-500 my-1">
-                                Apple
-    
-                            </div>
-                            <div class="product-rating text-black justify-center -ml-1 my-1">
-                                ⭐️⭐️⭐️⭐️⭐️ 4.5
-    
-                            </div>
-                            <div class="product-price text-black justify-center -ml-1 my-1">
-                                $1149.00
-    
-                            </div>
-                            <div class="add-to-cart h-8 w-28 text-md rounded  cursor-pointer hover:bg-yellow-600 text-white-500 flex bg-yellow-600 items-center justify-center">
-                                Add To Cart
-
-                            </div>
-                           
-                        </div>
-                        <div class="product-image
-                        rounded-lg w-48 h-52  p-4 ">
-                            <img class= "w-full h-full object-contain"src="https://cdn.vox-cdn.com/thumbor/9TUKRfuUjZ-v_ndgQaxP7u8A6bA=/0x0:1301x867/1200x800/filters:focal(547x330:755x538)/cdn.vox-cdn.com/uploads/chorus_image/image/69497487/msedge_a3fZpfyz0z.0.png">
-                            <h1 class="product-name text-gray-600 font-bold mt-2 test-sm cursor-pointer
-                            ">
-                                Ipod
-    
-                            </h1>
-                            <div class="product built text-bold text-green-500 my-1">
-                                Sony
-    
-                            </div>
-                            <div class="product-rating text-black justify-center -ml-1 my-1">
-                                ⭐️⭐️⭐️⭐️⭐️ 4.5
-    
-                            </div>
-                            <div class="product-rating text-black justify-center -ml-1 my-1">
-                                $1300
-
-                            </div>
-                            <div class="add-to-cart h-8 w-28  text-md rounded  cursor-pointer hover:bg-yellow-600 text-white-500 flex bg-yellow-600 items-center justify-center">
-                                Add To Cart
-
-                            </div>
-                           
-                        </div>
-                        <div class="product-image
-                        rounded-lg w-48 h-52  p-4 ">
-                            <img class= "w-full h-full object-contain"src="https://www.bhphotovideo.com/images/images2500x2500/nikon_zfc_mirrorless_camera_body_1649279.jpg">
-                            <h1 class="product-name text-gray-600 font-bold mt-2 test-sm cursor-pointer
-                            ">
-                                Fujiflim
-    
-                            </h1>
-                            <div class="product built text-bold text-green-500 my-1">
-                                Nikon
-    
-                            </div>
-                            <div class="product-rating text-black justify-center -ml-1 my-1">
-                                ⭐️⭐️⭐️⭐️⭐️ 4.5
-    
-                            </div>
-                            <div class="product-rating text-black justify-center -ml-1 my-1">
-                                $1400
-    
-                            </div>
-                            <div class="add-to-cart h-8 w-28  mx-1 text-md rounded  cursor-pointer hover:bg-yellow-600 text-white-500 flex bg-yellow-600 items-center justify-center">
-                                Add To Cart
-
-                            </div>
-                           
-                        </div>
+                        
+                       
                             
-                        </div>
+                    </div>
                         
                       
                         
