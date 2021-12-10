@@ -40,22 +40,16 @@ function getItems(){
             ⭐️⭐️⭐️⭐️⭐️ ${item.rating}
 
         </div>
-        <div class="product-price text-black  my-1">
+            <div class="product-price text-black  my-1">
             $ ${item.price}
-        </div>
-        <div class="add-to-cart h-8 w-28  text-md rounded  cursor-pointer 
-            hover:bg-yellow-600 text-white-500 flex bg-yellow-600 items-center justify-center">
-            Add To Cart
-
-        </div>
+            </div>
+           
         `
-            itemsHTML +=`
-                <div class="main-product" mr-5>
-            
-                </div>
-
-        
-            `
+        let addToCartEl = document.createElement("div")
+        addToCartEl.classList.add("hover:bg-yellow-600", "cursor-pointer", "product-add", "h-8", "w-28", "rounded", "bg-yellow-500", "text-white", "text-md", "flex", "justify-center", "items-center");
+        addToCartEl.innerText="Add To Cart";
+        doc.appendChild(addToCartEl);
+        document.querySelector(".main-sectiom-products").appendChild(doc);
         })
         document.querySelector(".main-section-products").innerHTML= itemsHTML;
 
